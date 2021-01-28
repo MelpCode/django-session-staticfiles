@@ -1,0 +1,19 @@
+{% extends 'main/main.html'%}
+
+{%block index%}
+<div class="jumbotron p-4">
+    <h1 class="display-6">Bienvenido {{sesion}}</h1>
+    <hr class="my-2">
+    <p class="font-italic text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos culpa, dignissimos dolor, iure pariatur eum perspiciatis rem voluptas nesciunt reprehenderit ea exercitationem! A quas eaque consectetur magnam. Aperiam, quasi quidem.</p>
+    
+    <div class="p-2">
+        {%load static%}
+        <a  class="btn btn-info" href="{% static 'archivo.exe' %}">Download</a>
+    </div>
+    <hr class="my-2">
+    <div class="p-2">
+        <a href="/logout" class="btn btn-danger">Logout</a>
+    </div>
+    
+</div>
+{%endblock%}
